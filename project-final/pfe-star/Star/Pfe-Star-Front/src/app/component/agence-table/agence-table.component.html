@@ -1,0 +1,18 @@
+<div style="margin-left: 20%">
+  <table class="table" >
+    <thead>
+    <tr>
+      <th scope="col">id </th>
+      <th scope="col">name</th>
+      <th scope="col">adress</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let agence of agences">
+    <tr>
+      <th scope="row">{{agence.id}}</th>
+      <td>{{agence.firstName}}</td>
+      <td>{{agence.email}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

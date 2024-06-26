@@ -1,0 +1,20 @@
+<table class="table" style="margin-left: 20%">
+  <thead>
+  <tr>
+    <th scope="col">id </th>
+    <th scope="col">modele</th>
+    <th scope="col">type</th>
+    <th scope="col">immatriculation</th>
+    <th scope="col">dispo</th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let car of cars">
+  <tr>
+    <th scope="row">{{car.id}}</th>
+    <td>{{car.modele}}</td>
+    <td>{{car.typeVehicule}}</td>
+    <td>{{car.immatriculation}}</td>
+    <td>{{car.disponible}}</td>
+  </tr>
+  </tbody>
+</table>

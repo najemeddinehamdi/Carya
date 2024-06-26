@@ -1,0 +1,22 @@
+<table class="table" style="margin-left: 20%">
+  <thead>
+  <tr>
+    <th scope="col">id </th>
+    <th scope="col">first name</th>
+    <th scope="col">last name</th>
+    <th scope="col">phone</th>
+    <th scope="col">email</th>
+    <th scope="col">password</th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let client of users">
+  <tr *ngIf="client.roles === 'client'">
+    <th scope="row">{{client.id}}</th>
+    <td>{{client.firstName}}</td>
+    <td>{{client.lastName}}</td>
+    <td>{{client.phone}}</td>
+    <td>{{client.email}}</td>
+    <td>{{client.password}}</td>
+  </tr>
+  </tbody>
+</table>

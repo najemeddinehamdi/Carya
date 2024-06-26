@@ -1,0 +1,25 @@
+<table class="table" style="margin-left: 20%">
+  <thead>
+  <tr>
+    <th scope="col">id </th>
+    <th scope="col">car</th>
+    <th scope="col">prix</th>
+    <th scope="col">date debut</th>
+    <th scope="col">date fin</th>
+    <!--    <th scope="col">DRIVER</th>-->
+    <!--    <th scope="col">client</th>-->
+  </tr>
+  </thead>
+  <tbody *ngFor="let location of locations">
+  <tr >
+    <th scope="row">{{location.id}}</th>
+    <td>{{location.vehicule.modele}}</td>
+
+    <td>{{location.prixTotal}}</td>
+    <td>{{location.startDate}}</td>
+    <td>{{location.endDate}}</td>
+    <!--    <td>{{location.chauffeur.username}}</td>-->
+    <!--    <td>{{location.client.username}}</td>-->
+  </tr>
+  </tbody>
+</table>
